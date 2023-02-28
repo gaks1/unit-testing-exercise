@@ -1,4 +1,5 @@
 const stringLength = require('./length');
+const reverseString = require('./reverse');
 
 
 test('length of bookmark', () => {
@@ -14,6 +15,9 @@ test('length of ', () => {
     expect(() => stringLength("")).toThrow(Error);
 })
 
+test('reverse of when will you arrive', () => {
+    expect(reverseString('when will you arrive')).toBe('evirra uoy lliw nehw');
+})
 
 
 
