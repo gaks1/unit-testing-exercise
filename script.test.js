@@ -1,6 +1,7 @@
 const stringLength = require('./length');
 const reverseString = require('./reverse');
 const Calculator = require('./class');
+const capitalize = require('./capitalize');
 
 
 test('length of bookmark', () => {
@@ -74,6 +75,10 @@ describe('division group', () => {
     })
 })
 
+
+test('capitalize', () => {
+    expect(capitalize("read")).toBe("Read");
+})
 
 
 
